@@ -8,6 +8,8 @@ package prueba6;
  *
  * @author ANGILI PALACIOS
  */
-public class MalaRuta {
-    
+public class MalaRuta extends Exception {
+    public MalaRuta(String mensaje) {
+        super(mensaje);
+    }
 }
