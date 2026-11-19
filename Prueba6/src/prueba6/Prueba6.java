@@ -8,13 +8,20 @@ package prueba6;
  *
  * @author ANGILI PALACIOS
  */
+import javax.swing.SwingUtilities;
 public class Prueba6 {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-    }
+       SwingUtilities.invokeLater(() -> {
+            Principal vista = new Principal();
+            ExplorarM modelo = new ExplorarM();
+            new ExploradorC(vista, modelo);
+            vista.setVisible(true);
+        });
+    } // TODO code application logic here
+    
     
 }
